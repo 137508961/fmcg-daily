@@ -1,95 +1,104 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FMCG / 零售每日简报</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FMCG 今日日报｜2026年7月9日</title>
   <style>
-    :root{--bg:#f6f7fb;--card:#ffffff;--text:#1f2937;--muted:#6b7280;--brand:#0f766e;--line:#e5e7eb;--accent:#ecfeff;}
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans SC","PingFang SC","Microsoft YaHei",Arial,sans-serif;line-height:1.6;}
-    .wrap{max-width:980px;margin:0 auto;padding:28px 16px 40px;}
-    header{padding:26px 24px;border-radius:20px;background:linear-gradient(135deg,#0f766e,#115e59);color:#fff;box-shadow:0 10px 28px rgba(15,118,110,.18);}
-    header h1{margin:0 0 8px;font-size:clamp(26px,5vw,40px);letter-spacing:.02em;}
-    header p{margin:0;color:#d1fae5;font-size:15px;}
-    section{margin-top:22px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 6px 18px rgba(15,23,42,.05);}
-    h2{margin:0 0 16px;font-size:22px;color:#0f766e;display:flex;align-items:center;gap:8px;}
-    .story{padding:18px 0;border-top:1px solid var(--line);}
-    .story:first-of-type{border-top:0;padding-top:0;}
-    .story h3{margin:0 0 8px;font-size:18px;line-height:1.35;}
-    .story p{margin:0 0 10px;color:#374151;}
-    a{color:#0f766e;text-decoration:none;font-weight:600;word-break:break-word;}
-    a:hover{text-decoration:underline;}
-    .tag{display:inline-block;margin-bottom:10px;padding:3px 9px;border-radius:999px;background:var(--accent);color:#0f766e;font-size:12px;font-weight:700;}
-    ul{margin:0;padding-left:20px;}
-    li{margin:8px 0;}
-    .sources li{font-size:14px;color:var(--muted);}
-    footer{margin-top:22px;text-align:center;color:#6b7280;font-size:13px;padding:18px 8px;}
-    @media (max-width:640px){.wrap{padding:18px 12px 28px;}header,section{border-radius:14px;padding:18px}.story h3{font-size:16px}}
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; background: #f5f7fb; color: #1f2937; line-height: 1.6; }
+    .container { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
+    header { background: linear-gradient(135deg, #0f766e, #155e75); color: #fff; padding: 44px 0 36px; }
+    header .kicker { font-size: 14px; letter-spacing: .12em; text-transform: uppercase; opacity: .85; margin-bottom: 10px; }
+    header h1 { margin: 0; font-size: clamp(28px, 5vw, 44px); line-height: 1.15; }
+    header .date { margin-top: 12px; font-size: 16px; opacity: .9; }
+    main { padding: 28px 0 36px; }
+    section { background: #fff; border: 1px solid #e5e7eb; border-radius: 18px; padding: 24px; margin-bottom: 20px; box-shadow: 0 8px 24px rgba(15, 23, 42, .05); }
+    h2 { margin: 0 0 18px; font-size: 22px; color: #0f766e; display: flex; align-items: center; gap: 10px; }
+    h2::before { content: ""; width: 8px; height: 24px; border-radius: 999px; background: #14b8a6; display: inline-block; }
+    .news-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .card { border: 1px solid #e5e7eb; border-radius: 14px; padding: 18px; background: #fbfdff; transition: transform .2s ease, box-shadow .2s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(15, 23, 42, .08); }
+    .rank { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: #ccfbf1; color: #0f766e; font-weight: 700; font-size: 14px; margin-bottom: 10px; }
+    .card h3 { margin: 0 0 10px; font-size: 18px; line-height: 1.35; color: #111827; }
+    .insight { margin: 0 0 14px; color: #4b5563; font-size: 15px; }
+    a { color: #0f766e; text-decoration: none; font-weight: 600; }
+    a:hover { text-decoration: underline; }
+    .takeaways { margin: 0; padding-left: 20px; }
+    .takeaways li { margin: 10px 0; }
+    .sources { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+    .sources li { padding: 10px 12px; border-radius: 10px; background: #f8fafc; border: 1px solid #e5e7eb; overflow-wrap: anywhere; }
+    footer { color: #6b7280; text-align: center; font-size: 13px; padding: 22px 0 34px; }
+    @media (max-width: 760px) { .news-grid { grid-template-columns: 1fr; } section { padding: 18px; border-radius: 14px; } header { padding: 34px 0 28px; } .container { width: min(100% - 24px, 1120px); } }
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <header>
-      <h1>FMCG / 零售每日简报</h1>
-      <p>基于 Retail Dive RSS feed 自动生成｜报告日期：2026-07-09</p>
-    </header>
-
-    <section>
-      <h2>今日要闻</h2>
-      <article class="story">
-        <span class="tag">价格与民生消费</span>
-        <h3>Walmart cuts prices on groceries and other goods</h3>
-        <p>沃尔玛下调食品杂货和其他商品价格，显示大型零售商仍在用“低价心智”争夺通胀敏感型消费者。对快消品牌而言，渠道端价格压力可能进一步传导至促销投入和品类组合调整。</p>
-        <a href="https://www.retaildive.com/news/walmart-summer-price-cuts-inflation-ground-beef-president-trump/824592/" target="_blank" rel="noopener">查看来源</a>
-      </article>
-      <article class="story">
-        <span class="tag">数字化投入</span>
-        <h3>Retailers plan to invest deeper in AI, cybersecurity this year</h3>
-        <p>多数零售商已将年度技术预算提升到高位，AI 与网络安全成为重点投入方向。零售企业正把技术能力视为提升运营效率、个性化营销和供应链韧性的基础设施。</p>
-        <a href="https://www.retaildive.com/news/retailers-increase-investments-spending-ai-digital-technology/824613/" target="_blank" rel="noopener">查看来源</a>
-      </article>
-      <article class="story">
-        <span class="tag">返校季促销</span>
-        <h3>Kohl’s prices thousands of back-to-school items under $25 as consumers look for deals</h3>
-        <p>Kohl’s 将数千款返校季商品定价在 25 美元以下，反映百货渠道正在以更明确的价格带吸引预算受限家庭。返校季表现也将成为其转型成效和客流恢复的重要检验。</p>
-        <a href="https://www.retaildive.com/news/kohls-low-prices-thousands-back-to-school-items-consumer-deals/824683/" target="_blank" rel="noopener">查看来源</a>
-      </article>
-      <article class="story">
-        <span class="tag">会员生态</span>
-        <h3>Home Depot adds 7-Eleven, Jimmy John’s as pro loyalty partners</h3>
-        <p>Home Depot 将 7-Eleven 和 Jimmy John’s 纳入专业客户会员权益，说明零售会员体系正从单一折扣扩展到跨场景生活与商务服务。跨品牌合作有助于提高会员使用频次和客户粘性。</p>
-        <a href="https://www.retaildive.com/news/home-depot-7-eleven-jimmy-johns-pro-loyalty-partners/824672/" target="_blank" rel="noopener">查看来源</a>
-      </article>
-      <article class="story">
-        <span class="tag">资本与并购</span>
-        <h3>The running list of retail deals in 2026</h3>
-        <p>2026 年上半年零售交易活跃，Etsy 出售 Depop、Reformation 申请 IPO、Bed Bath &amp; Beyond 进行多项收购。行业资本动作显示零售企业正在通过资产重组、上市和并购寻找增长与估值修复路径。</p>
-        <a href="https://www.retaildive.com/news/running-list-major-retail-deals-acquisitions-ipos-2026/824389/" target="_blank" rel="noopener">查看来源</a>
-      </article>
+  <header>
+    <div class="container">
+      <div class="kicker">FMCG / Retail Daily Brief</div>
+      <h1>FMCG 今日日报</h1>
+      <div class="date">2026年7月9日｜基于 Retail Dive 公开 RSS 信息</div>
+    </div>
+  </header>
+  <main class="container">
+    <section aria-labelledby="top-news">
+      <h2 id="top-news">今日要闻</h2>
+      <div class="news-grid">
+        <article class="card">
+          <div class="rank">1</div>
+          <h3>Walmart cuts prices on groceries and other goods</h3>
+          <p class="insight">沃尔玛下调食品杂货及其他商品价格，说明头部零售商仍在用“低价心智”对冲通胀压力和消费者价格敏感。对 FMCG 品牌而言，货架端促销强度可能继续上升，毛利与销量平衡将更难管理。</p>
+          <a href="https://www.retaildive.com/news/walmart-summer-price-cuts-inflation-ground-beef-president-trump/824592/" target="_blank" rel="noopener">查看来源</a>
+        </article>
+        <article class="card">
+          <div class="rank">2</div>
+          <h3>Kohl’s prices thousands of back-to-school items under $25 as consumers look for deals</h3>
+          <p class="insight">Kohl’s 将数千款返校季商品定价在 25 美元以下，反映家庭消费仍以性价比和预算控制为核心。返校季作为零售旺季前哨，将检验百货与大众零售在低价商品组合、客流转化上的执行力。</p>
+          <a href="https://www.retaildive.com/news/kohls-low-prices-thousands-back-to-school-items-consumer-deals/824683/" target="_blank" rel="noopener">查看来源</a>
+        </article>
+        <article class="card">
+          <div class="rank">3</div>
+          <h3>Retailers plan to invest deeper in AI, cybersecurity this year</h3>
+          <p class="insight">多数零售商今年计划加码 AI 与网络安全，且大型企业年度技术投入已达到数千万美元级别。AI 正从营销与客服工具升级为供应链、定价、库存和风控的基础设施，数据安全也成为零售数字化的必要前提。</p>
+          <a href="https://www.retaildive.com/news/retailers-increase-investments-spending-ai-digital-technology/824613/" target="_blank" rel="noopener">查看来源</a>
+        </article>
+        <article class="card">
+          <div class="rank">4</div>
+          <h3>Home Depot adds 7-Eleven, Jimmy John’s as pro loyalty partners</h3>
+          <p class="insight">Home Depot 将 7-Eleven、Jimmy John’s 纳入专业客户忠诚度合作，显示零售会员权益正在从单一折扣扩展到跨场景生活与商务服务。对便利店和餐饮品牌而言，B2B 客群合作可成为高频触达与增量获客的新通道。</p>
+          <a href="https://www.retaildive.com/news/home-depot-7-eleven-jimmy-johns-pro-loyalty-partners/824672/" target="_blank" rel="noopener">查看来源</a>
+        </article>
+        <article class="card">
+          <div class="rank">5</div>
+          <h3>The running list of retail deals in 2026</h3>
+          <p class="insight">2026 年上半年零售交易活跃，包括 Etsy 出售 Depop、Reformation 申请 IPO、Bed Bath & Beyond 多起收购等。资本与并购动作表明零售企业正在通过组合重塑、上市融资和品牌整合寻找增长确定性。</p>
+          <a href="https://www.retaildive.com/news/running-list-major-retail-deals-acquisitions-ipos-2026/824389/" target="_blank" rel="noopener">查看来源</a>
+        </article>
+      </div>
     </section>
 
-    <section>
-      <h2>行业洞察</h2>
-      <ul>
-        <li>消费者价格敏感度仍高，食品杂货、返校季商品等高频刚需品类将继续成为零售商引流和竞争的核心战场。</li>
-        <li>AI、网络安全与数字化预算上升，意味着零售竞争正从门店和价格延伸到数据、自动化和风险治理能力。</li>
-        <li>会员联盟、并购与 IPO 动作增多，反映企业正在通过生态合作和资本运作提升增长弹性。</li>
+    <section aria-labelledby="insights">
+      <h2 id="insights">行业洞察</h2>
+      <ul class="takeaways">
+        <li><strong>低价竞争仍是主线：</strong>从沃尔玛食品杂货降价到 Kohl’s 返校低价策略，消费者交易导向明显，零售商将继续用价格带和促销组合争夺客流。</li>
+        <li><strong>技术投入进入深水区：</strong>AI 与网络安全预算提升，意味着零售/FMCG 企业的竞争焦点正延伸到需求预测、动态定价、个性化营销和系统韧性。</li>
+        <li><strong>生态合作与资本整合并行：</strong>会员权益跨品牌合作、并购和 IPO 活跃，显示企业正同时通过外部流量联盟与资产重组提升增长效率。</li>
       </ul>
     </section>
 
-    <section>
-      <h2>来源汇总</h2>
+    <section aria-labelledby="sources">
+      <h2 id="sources">来源汇总</h2>
       <ul class="sources">
-        <li><a href="https://www.retaildive.com/news/walmart-summer-price-cuts-inflation-ground-beef-president-trump/824592/" target="_blank" rel="noopener">https://www.retaildive.com/news/walmart-summer-price-cuts-inflation-ground-beef-president-trump/824592/</a></li>
-        <li><a href="https://www.retaildive.com/news/retailers-increase-investments-spending-ai-digital-technology/824613/" target="_blank" rel="noopener">https://www.retaildive.com/news/retailers-increase-investments-spending-ai-digital-technology/824613/</a></li>
-        <li><a href="https://www.retaildive.com/news/kohls-low-prices-thousands-back-to-school-items-consumer-deals/824683/" target="_blank" rel="noopener">https://www.retaildive.com/news/kohls-low-prices-thousands-back-to-school-items-consumer-deals/824683/</a></li>
-        <li><a href="https://www.retaildive.com/news/home-depot-7-eleven-jimmy-johns-pro-loyalty-partners/824672/" target="_blank" rel="noopener">https://www.retaildive.com/news/home-depot-7-eleven-jimmy-johns-pro-loyalty-partners/824672/</a></li>
-        <li><a href="https://www.retaildive.com/news/running-list-major-retail-deals-acquisitions-ipos-2026/824389/" target="_blank" rel="noopener">https://www.retaildive.com/news/running-list-major-retail-deals-acquisitions-ipos-2026/824389/</a></li>
+        <li><a href="https://www.retaildive.com/news/walmart-summer-price-cuts-inflation-ground-beef-president-trump/824592/" target="_blank" rel="noopener">Retail Dive｜Walmart cuts prices on groceries and other goods</a></li>
+        <li><a href="https://www.retaildive.com/news/kohls-low-prices-thousands-back-to-school-items-consumer-deals/824683/" target="_blank" rel="noopener">Retail Dive｜Kohl’s prices thousands of back-to-school items under $25 as consumers look for deals</a></li>
+        <li><a href="https://www.retaildive.com/news/retailers-increase-investments-spending-ai-digital-technology/824613/" target="_blank" rel="noopener">Retail Dive｜Retailers plan to invest deeper in AI, cybersecurity this year</a></li>
+        <li><a href="https://www.retaildive.com/news/home-depot-7-eleven-jimmy-johns-pro-loyalty-partners/824672/" target="_blank" rel="noopener">Retail Dive｜Home Depot adds 7-Eleven, Jimmy John’s as pro loyalty partners</a></li>
+        <li><a href="https://www.retaildive.com/news/running-list-major-retail-deals-acquisitions-ipos-2026/824389/" target="_blank" rel="noopener">Retail Dive｜The running list of retail deals in 2026</a></li>
       </ul>
     </section>
-
-    <footer>本报告由 AI Agent 自动生成，仅基于公开信息，未经人工核实。</footer>
   </main>
+  <footer>
+    <div class="container">本页面由 AI Agent 自动生成，仅基于公开信息，未经人工核实。</div>
+  </footer>
 </body>
 </html>
